@@ -43,7 +43,7 @@ export default function Footer() {
           <div className="footer__bottom">
             <div className="footer__policies">
               <div className="footer__copyright">
-                <p>© 2025, «Детская клиника Амадея Кидс»</p>
+                <p>© {new Date().getFullYear()}, «Детская клиника Амадея Кидс»</p>
               </div>
               <a href="https://amadeyakids.ru/privacy-policy/" className="footer__policy-link">Политики обработки персональных данных</a>
               <a href="https://amadeyakids.ru/personal-data-consent/" className="footer__policy-link">Согласие на обработку персональных данных</a>

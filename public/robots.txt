@@ -1,0 +1,16 @@
+User-agent: Yandex
+Disallow: /cgi-bin             
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php 
+Disallow: /?                    
+Disallow: *?s=                  
+Disallow: *&s=                
+Disallow: /search            
+Disallow: /author/           
+Disallow: */embed$             
+Disallow: */xmlrpc.php         
+Disallow: *utm*=               
+Disallow: *openstat=           
+Sitemap: https://amadeyakids.ru/page-sitemap.xml
+User-agent: *
+Disallow: /wp-content/uploads/wpo/wpo-plugins-tables-list.json

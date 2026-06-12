@@ -1,0 +1,89 @@
+import type { Metadata } from "next";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+
+const pageContent = `<article id="post-1034" class="post-1034 page type-page status-publish hentry">
+                <header class="entry-header">
+                    <h1 class="entry-title">Педиатр Власенко</h1>
+                </header>
+
+                <div class="entry-content">
+                    <p><img fetchpriority="high" decoding="async" width="800" height="420" src="/wp-content/uploads/2025/03/vlasenko-1024x538.webp" alt="" srcset="/wp-content/uploads/2025/03/vlasenko-1024x538.webp 1024w, /wp-content/uploads/2025/03/vlasenko-300x158.webp 300w, /wp-content/uploads/2025/03/vlasenko-768x404.webp 768w, /wp-content/uploads/2025/03/vlasenko.webp 1510w" sizes="(max-width: 800px) 100vw, 800px" />																										<img decoding="async" width="239" height="248" src="/wp-content/uploads/2025/04/Screenshot_13.png" alt="" /><br />
+				<svg xmlns="https://www.w3.org/2000/svg" width="28" height="34" viewBox="0 0 28 34" fill="none"><mask id="path-1-inside-1_250_786" fill="white"><path d="M0.832031 33.9753V30.6606C0.832031 28.9024 1.75976 27.2162 3.41113 25.9729C5.06249 24.7297 7.30223 24.0312 9.63762 24.0312H18.4432C20.7786 24.0312 23.0183 24.7297 24.6697 25.9729C26.3211 27.2162 27.2488 28.9024 27.2488 30.6606V33.9753"></path><path d="M23.9473 9.94404C23.9473 15.436 19.5121 19.8881 14.041 19.8881C8.56996 19.8881 4.13477 15.436 4.13477 9.94404C4.13477 4.4521 8.56996 0 14.041 0C19.5121 0 23.9473 4.4521 23.9473 9.94404Z"></path></mask><path d="M-2.16797 33.9753C-2.16797 35.6321 -0.824823 36.9753 0.832031 36.9753C2.48889 36.9753 3.83203 35.6321 3.83203 33.9753H-2.16797ZM9.63762 24.0312V21.0312V24.0312ZM18.4432 24.0312V21.0312V24.0312ZM24.2488 33.9753C24.2488 35.6321 25.5919 36.9753 27.2488 36.9753C28.9056 36.9753 30.2488 35.6321 30.2488 33.9753H24.2488ZM3.83203 33.9753V30.6606H-2.16797V33.9753H3.83203ZM3.83203 30.6606C3.83203 30.0174 4.16747 29.1587 5.21551 28.3697L1.60674 23.5762C-0.647952 25.2737 -2.16797 27.7874 -2.16797 30.6606H3.83203ZM5.21551 28.3697C6.28024 27.5681 7.86466 27.0312 9.63762 27.0312V21.0312C6.73979 21.0312 3.84475 21.8913 1.60674 23.5762L5.21551 28.3697ZM9.63762 27.0312H18.4432V21.0312H9.63762V27.0312ZM18.4432 27.0312C20.2162 27.0312 21.8006 27.5681 22.8653 28.3697L26.4741 23.5762C24.2361 21.8913 21.341 21.0312 18.4432 21.0312V27.0312ZM22.8653 28.3697C23.9133 29.1587 24.2488 30.0174 24.2488 30.6606H30.2488C30.2488 27.7874 28.7288 25.2737 26.4741 23.5762L22.8653 28.3697ZM24.2488 30.6606V33.9753H30.2488V30.6606H24.2488ZM20.9473 9.94404C20.9473 13.7899 17.8445 16.8881 14.041 16.8881V22.8881C21.1797 22.8881 26.9473 17.0821 26.9473 9.94404H20.9473ZM14.041 16.8881C10.2376 16.8881 7.13477 13.7899 7.13477 9.94404H1.13477C1.13477 17.0821 6.90235 22.8881 14.041 22.8881V16.8881ZM7.13477 9.94404C7.13477 6.09818 10.2376 3 14.041 3V-3C6.90235 -3 1.13477 2.80602 1.13477 9.94404H7.13477ZM14.041 3C17.8445 3 20.9473 6.09818 20.9473 9.94404H26.9473C26.9473 2.80602 21.1797 -3 14.041 -3V3Z" fill="#272727" mask="url(#path-1-inside-1_250_786)"></path></svg>				</p>
+<h3>
+							Власенко Валерий Андреевич<br />
+					</h3>
+<p>				<svg xmlns="https://www.w3.org/2000/svg" width="28" height="34" viewBox="0 0 28 34" fill="none"><mask id="path-1-inside-1_250_786" fill="white"><path d="M0.832031 33.9753V30.6606C0.832031 28.9024 1.75976 27.2162 3.41113 25.9729C5.06249 24.7297 7.30223 24.0312 9.63762 24.0312H18.4432C20.7786 24.0312 23.0183 24.7297 24.6697 25.9729C26.3211 27.2162 27.2488 28.9024 27.2488 30.6606V33.9753"></path><path d="M23.9473 9.94404C23.9473 15.436 19.5121 19.8881 14.041 19.8881C8.56996 19.8881 4.13477 15.436 4.13477 9.94404C4.13477 4.4521 8.56996 0 14.041 0C19.5121 0 23.9473 4.4521 23.9473 9.94404Z"></path></mask><path d="M-2.16797 33.9753C-2.16797 35.6321 -0.824823 36.9753 0.832031 36.9753C2.48889 36.9753 3.83203 35.6321 3.83203 33.9753H-2.16797ZM9.63762 24.0312V21.0312V24.0312ZM18.4432 24.0312V21.0312V24.0312ZM24.2488 33.9753C24.2488 35.6321 25.5919 36.9753 27.2488 36.9753C28.9056 36.9753 30.2488 35.6321 30.2488 33.9753H24.2488ZM3.83203 33.9753V30.6606H-2.16797V33.9753H3.83203ZM3.83203 30.6606C3.83203 30.0174 4.16747 29.1587 5.21551 28.3697L1.60674 23.5762C-0.647952 25.2737 -2.16797 27.7874 -2.16797 30.6606H3.83203ZM5.21551 28.3697C6.28024 27.5681 7.86466 27.0312 9.63762 27.0312V21.0312C6.73979 21.0312 3.84475 21.8913 1.60674 23.5762L5.21551 28.3697ZM9.63762 27.0312H18.4432V21.0312H9.63762V27.0312ZM18.4432 27.0312C20.2162 27.0312 21.8006 27.5681 22.8653 28.3697L26.4741 23.5762C24.2361 21.8913 21.341 21.0312 18.4432 21.0312V27.0312ZM22.8653 28.3697C23.9133 29.1587 24.2488 30.0174 24.2488 30.6606H30.2488C30.2488 27.7874 28.7288 25.2737 26.4741 23.5762L22.8653 28.3697ZM24.2488 30.6606V33.9753H30.2488V30.6606H24.2488ZM20.9473 9.94404C20.9473 13.7899 17.8445 16.8881 14.041 16.8881V22.8881C21.1797 22.8881 26.9473 17.0821 26.9473 9.94404H20.9473ZM14.041 16.8881C10.2376 16.8881 7.13477 13.7899 7.13477 9.94404H1.13477C1.13477 17.0821 6.90235 22.8881 14.041 22.8881V16.8881ZM7.13477 9.94404C7.13477 6.09818 10.2376 3 14.041 3V-3C6.90235 -3 1.13477 2.80602 1.13477 9.94404H7.13477ZM14.041 3C17.8445 3 20.9473 6.09818 20.9473 9.94404H26.9473C26.9473 2.80602 21.1797 -3 14.041 -3V3Z" fill="#272727" mask="url(#path-1-inside-1_250_786)"></path></svg>				</p>
+<h3>
+							Врач педиатр<br />
+					</h3>
+<p>				<svg xmlns="https://www.w3.org/2000/svg" width="28" height="34" viewBox="0 0 28 34" fill="none"><mask id="path-1-inside-1_250_786" fill="white"><path d="M0.832031 33.9753V30.6606C0.832031 28.9024 1.75976 27.2162 3.41113 25.9729C5.06249 24.7297 7.30223 24.0312 9.63762 24.0312H18.4432C20.7786 24.0312 23.0183 24.7297 24.6697 25.9729C26.3211 27.2162 27.2488 28.9024 27.2488 30.6606V33.9753"></path><path d="M23.9473 9.94404C23.9473 15.436 19.5121 19.8881 14.041 19.8881C8.56996 19.8881 4.13477 15.436 4.13477 9.94404C4.13477 4.4521 8.56996 0 14.041 0C19.5121 0 23.9473 4.4521 23.9473 9.94404Z"></path></mask><path d="M-2.16797 33.9753C-2.16797 35.6321 -0.824823 36.9753 0.832031 36.9753C2.48889 36.9753 3.83203 35.6321 3.83203 33.9753H-2.16797ZM9.63762 24.0312V21.0312V24.0312ZM18.4432 24.0312V21.0312V24.0312ZM24.2488 33.9753C24.2488 35.6321 25.5919 36.9753 27.2488 36.9753C28.9056 36.9753 30.2488 35.6321 30.2488 33.9753H24.2488ZM3.83203 33.9753V30.6606H-2.16797V33.9753H3.83203ZM3.83203 30.6606C3.83203 30.0174 4.16747 29.1587 5.21551 28.3697L1.60674 23.5762C-0.647952 25.2737 -2.16797 27.7874 -2.16797 30.6606H3.83203ZM5.21551 28.3697C6.28024 27.5681 7.86466 27.0312 9.63762 27.0312V21.0312C6.73979 21.0312 3.84475 21.8913 1.60674 23.5762L5.21551 28.3697ZM9.63762 27.0312H18.4432V21.0312H9.63762V27.0312ZM18.4432 27.0312C20.2162 27.0312 21.8006 27.5681 22.8653 28.3697L26.4741 23.5762C24.2361 21.8913 21.341 21.0312 18.4432 21.0312V27.0312ZM22.8653 28.3697C23.9133 29.1587 24.2488 30.0174 24.2488 30.6606H30.2488C30.2488 27.7874 28.7288 25.2737 26.4741 23.5762L22.8653 28.3697ZM24.2488 30.6606V33.9753H30.2488V30.6606H24.2488ZM20.9473 9.94404C20.9473 13.7899 17.8445 16.8881 14.041 16.8881V22.8881C21.1797 22.8881 26.9473 17.0821 26.9473 9.94404H20.9473ZM14.041 16.8881C10.2376 16.8881 7.13477 13.7899 7.13477 9.94404H1.13477C1.13477 17.0821 6.90235 22.8881 14.041 22.8881V16.8881ZM7.13477 9.94404C7.13477 6.09818 10.2376 3 14.041 3V-3C6.90235 -3 1.13477 2.80602 1.13477 9.94404H7.13477ZM14.041 3C17.8445 3 20.9473 6.09818 20.9473 9.94404H26.9473C26.9473 2.80602 21.1797 -3 14.041 -3V3Z" fill="#272727" mask="url(#path-1-inside-1_250_786)"></path></svg>				</p>
+<h3>
+							Стаж 1 год<br />
+					</h3>
+<p>												<a role="button"><br />
+									Записаться<br />
+					</a><br />
+														<a href="#"><br />
+									Документы<br />
+					</a></p>
+<figure class='gallery-item'>
+				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="7b9dcc73" data-elementor-lightbox-title="диплом(1)" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTcwNywidXJsIjoiaHR0cHM6XC9cL2FtYWRleWFraWRzLnJ1XC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI1XC8wNFwvXHUwNDM0XHUwNDM4XHUwNDNmXHUwNDNiXHUwNDNlXHUwNDNjMS5qcGciLCJzbGlkZXNob3ciOiI3YjlkY2M3MyJ9" href='/wp-content/uploads/2025/04/диплом1.jpg'><img width="300" height="214" src="/wp-content/uploads/2025/04/диплом1-300x214.jpg" alt="" decoding="async" srcset="/wp-content/uploads/2025/04/диплом1-300x214.jpg 300w, /wp-content/uploads/2025/04/диплом1-1024x732.jpg 1024w, /wp-content/uploads/2025/04/диплом1-768x549.jpg 768w, /wp-content/uploads/2025/04/диплом1.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a><br />
+			</figure>
+<figure class='gallery-item'>
+				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="7b9dcc73" data-elementor-lightbox-title="аккред(1)" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTcwNiwidXJsIjoiaHR0cHM6XC9cL2FtYWRleWFraWRzLnJ1XC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI1XC8wNFwvXHUwNDMwXHUwNDNhXHUwNDNhXHUwNDQwXHUwNDM1XHUwNDM0MS5qcGciLCJzbGlkZXNob3ciOiI3YjlkY2M3MyJ9" href='/wp-content/uploads/2025/04/аккред1.jpg'><img loading="lazy" width="218" height="300" src="/wp-content/uploads/2025/04/аккред1-218x300.jpg" alt="" decoding="async" srcset="/wp-content/uploads/2025/04/аккред1-218x300.jpg 218w, /wp-content/uploads/2025/04/аккред1-746x1024.jpg 746w, /wp-content/uploads/2025/04/аккред1-768x1055.jpg 768w, /wp-content/uploads/2025/04/аккред1.jpg 932w" sizes="auto, (max-width: 218px) 100vw, 218px" /></a><br />
+			</figure>
+<p>												<a href="#"><br />
+									Наши клиенты о нас<br />
+					</a><br />
+						Ребенок часто болеет. Вот и перед Новым годом в очередной раз обструктивный бронхит. Доктор сразу определил, и на снимке подтвердилось. Назначил лечение. Всё прошло успешно. Лечение помогло. Дальше обратились с другой причиной. И так же получили дельный совет и рекомендации.<br />
+						<img decoding="async" src="/wp-content/uploads/2025/04/pro-640x456-1.jpeg" alt="пациент #1"><br />
+								<cite>пациент #123 января в 17:08</cite><br />
+						Спасибо большое,доктору<br />
+Были на приеме в амадея &#171;kids&#187;. Доктор осмотрел ребенка, сразу сделали экг и Валерий Андреевич дал заключение с рекомендациями. Все оперативно и доступно. Еще хочу отметить,что обратилась по своей проблеме (часто шелушится кожа), доктор рекомендовал сдать анализы и сделал назначение заподозрив недостаток железа. Анализы пришли, доводы подтвердились и моя проблема исчезла. Знающий,многопрофильный и компетентный<br />
+								<cite> Жанна МояЯндекс. Карты</cite><br />
+						Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.<br />
+						<img decoding="async" src="/wp-content/plugins/elementor/assets/images/placeholder.png" alt="Иванов Иван"><br />
+								<cite>Иванов ИванРуководитель</cite><br />
+							<svg aria-hidden="true" viewBox="0 0 1000 1000" xmlns="https://www.w3.org/2000/svg"><path d="M646 125C629 125 613 133 604 142L308 442C296 454 292 471 292 487 292 504 296 521 308 533L604 854C617 867 629 875 646 875 663 875 679 871 692 858 704 846 713 829 713 812 713 796 708 779 692 767L438 487 692 225C700 217 708 204 708 187 708 171 704 154 692 142 675 129 663 125 646 125Z"></path></svg><br />
+							<svg aria-hidden="true" viewBox="0 0 1000 1000" xmlns="https://www.w3.org/2000/svg"><path d="M696 533C708 521 713 504 713 487 713 471 708 454 696 446L400 146C388 133 375 125 354 125 338 125 325 129 313 142 300 154 292 171 292 187 292 204 296 221 308 233L563 492 304 771C292 783 288 800 288 817 288 833 296 850 308 863 321 871 338 875 354 875 371 875 388 867 400 854L696 533Z"></path></svg><br />
+																			<img decoding="async" src="/wp-content/uploads/2025/04/Screenshot_13-150x150.png" title="Screenshot_13" alt="Screenshot_13" loading="lazy" />																</p>
+<h2>Запишитесь на приём к специалисту </h2>
+<p>										<a href="#"><br />
+									Нажмите здесь<br />
+					</a></p>
+                </div>
+            </article>`;
+
+export const metadata: Metadata = {
+  title: "Педиатр Власенко - Частная детская клиника \"Амадея Кидс\"",
+  description: "Власенко Валерий Андреевич Врач педиатр Стаж 1 год Записаться Документы Наши клиенты о нас Ребенок часто болеет. Вот и перед Новым годом в очередной раз",
+  robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  alternates: { canonical: "https://amadeyakids.ru/elementor-1034/" },
+  openGraph: {
+    locale: "ru_RU",
+    type: "website",
+    title: "Педиатр Власенко - Частная детская клиника \"Амадея Кидс\"",
+    description: "Власенко Валерий Андреевич Врач педиатр Стаж 1 год Записаться Документы Наши клиенты о нас Ребенок часто болеет. Вот и перед Новым годом в очередной раз обструктивный бронхит. Доктор сразу определил, и на снимке подтвердилось. Назначил лечение. Всё прошло успешно. Лечение…",
+    url: "https://amadeyakids.ru/elementor-1034",
+    siteName: "Частная детская  клиника \"Амадея Кидс\"",
+    images: [{ url: "https://amadeyakids.ru/wp-content/uploads/2025/03/vlasenko-1024x538.webp",   alt: "Педиатр Власенко" }],
+  },
+};
+
+export default function Elementor1034Page() {
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context": "https://schema.org", "@graph": [{"@type": ["Organization", "Person"], "@id": "https://amadeyakids.ru/#person", "name": "Частная детская  клиника &quot;Амадея Кидс&quot;", "url": "https://amadeyakids.ru", "logo": {"@type": "ImageObject", "@id": "https://amadeyakids.ru/#logo", "url": "https://amadeyakids.ru/wp-content/uploads/2023/12/logo.svg", "contentUrl": "https://amadeyakids.ru/wp-content/uploads/2023/12/logo.svg", "caption": "Частная детская  клиника &quot;Амадея Кидс&quot;", "inLanguage": "ru-RU"}, "image": {"@id": "https://amadeyakids.ru/#logo"}}, {"@type": "WebSite", "@id": "https://amadeyakids.ru/#website", "url": "https://amadeyakids.ru", "name": "Частная детская  клиника &quot;Амадея Кидс&quot;", "publisher": {"@id": "https://amadeyakids.ru/#person"}, "inLanguage": "ru-RU"}, {"@type": "ImageObject", "@id": "https://amadeyakids.ru/wp-content/uploads/2025/04/Screenshot_13.png", "url": "https://amadeyakids.ru/wp-content/uploads/2025/04/Screenshot_13.png", "width": "200", "height": "200", "inLanguage": "ru-RU"}, {"@type": "BreadcrumbList", "@id": "https://amadeyakids.ru/elementor-1034/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": "1", "item": {"@id": "https://amadeyakids.ru", "name": "Главная"}}, {"@type": "ListItem", "position": "2", "item": {"@id": "https://amadeyakids.ru/elementor-1034/", "name": "Педиатр Власенко"}}]}, {"@type": "WebPage", "@id": "https://amadeyakids.ru/elementor-1034/#webpage", "url": "https://amadeyakids.ru/elementor-1034/", "name": "Педиатр Власенко - Частная детская клиника &quot;Амадея Кидс&quot;", "datePublished": "2024-06-01T14:13:49+00:00", "dateModified": "2025-05-14T17:52:12+00:00", "isPartOf": {"@id": "https://amadeyakids.ru/#website"}, "primaryImageOfPage": {"@id": "https://amadeyakids.ru/wp-content/uploads/2025/04/Screenshot_13.png"}, "inLanguage": "ru-RU", "breadcrumb": {"@id": "https://amadeyakids.ru/elementor-1034/#breadcrumb"}}, {"@type": "Person", "@id": "https://amadeyakids.ru/author/admin/", "name": "admin", "url": "https://amadeyakids.ru/author/admin/", "image": {"@type": "ImageObject", "@id": "https://secure.gravatar.com/avatar/f3e0ca583ffc99ed6e721aa64f36365f3d35cf56420d5505137de3874bb3f082?s=96&amp;d=mm&amp;r=g", "url": "https://secure.gravatar.com/avatar/f3e0ca583ffc99ed6e721aa64f36365f3d35cf56420d5505137de3874bb3f082?s=96&amp;d=mm&amp;r=g", "caption": "admin", "inLanguage": "ru-RU"}}, {"@type": "Article", "headline": "Педиатр Власенко - Частная детская клиника &quot;Амадея Кидс&quot;", "datePublished": "2024-06-01T14:13:49+00:00", "dateModified": "2025-05-14T17:52:12+00:00", "author": {"@id": "https://amadeyakids.ru/author/admin/", "name": "admin"}, "publisher": {"@id": "https://amadeyakids.ru/#person"}, "description": "Власенко Валерий Андреевич Врач педиатр Стаж 1 год Записаться Документы Наши клиенты о нас Ребенок часто болеет. Вот и перед Новым годом в очередной раз", "name": "Педиатр Власенко - Частная детская клиника &quot;Амадея Кидс&quot;", "@id": "https://amadeyakids.ru/elementor-1034/#richSnippet", "isPartOf": {"@id": "https://amadeyakids.ru/elementor-1034/#webpage"}, "image": {"@id": "https://amadeyakids.ru/wp-content/uploads/2025/04/Screenshot_13.png"}, "inLanguage": "ru-RU", "mainEntityOfPage": {"@id": "https://amadeyakids.ru/elementor-1034/#webpage"}}]}` }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Частная детская  клиника &quot;Амадея Кидс&quot;", "url": "https://amadeyakids.ru/", "telephone": "+7 (988) 627-17-77", "address": {"@type": "PostalAddress", "streetAddress": "г. Ставрополь, ул. 45 параллель, 26", "addressLocality": "Ставрополь", "addressCountry": "RU"}, "openingHours": ["Пн — Сб 7:30 — 19:00, Вс 7:30 — 13:00"], "image": "https://amadeyakids.ru/wp-content/themes/amadeya-kids-redesign/assets/img/logo.png", "sameAs": []}` }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Частная детская  клиника &quot;Амадея Кидс&quot;", "item": "https://amadeyakids.ru/"}, {"@type": "ListItem", "position": 2, "name": "Педиатр Власенко", "item": "https://amadeyakids.ru/elementor-1034/"}]}` }} />
+      <Header />
+      <main>
+        <div className="container">
+          <div dangerouslySetInnerHTML={{ __html: pageContent }} />
+        </div>
+      </main>
+      <Footer />
+    </>
+  );
+}

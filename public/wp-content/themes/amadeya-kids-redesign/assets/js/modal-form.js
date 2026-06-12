@@ -2,7 +2,7 @@
     'use strict';
 
     const config = {
-        webhookUrl: window.siteConfig?.bitrixWebhookUrl || 'https://amadeya.bitrix24.ru/rest/9/u37sit26v790so3z/crm.lead.add.json?FIELDS%5BNAME%5D%3D%26FIELDS%5BPHONE%5D%5B0%5D%5BVALUE%5D%3D%26FIELDS%5BOPENED%5D%3DY%26FIELDS%5BTITLE%5D%3D%25D0%2597%25D0%25B0%25D1%258F%25D0%25B2%25D0%25BA%25D0%25B0%2520%25D1%2581%2520%25D1%2581%25D0%25B0%25D0%25B9%25D1%2582%25D0%25B0%2520%25D0%2590%25D0%25BC%25D0%25B0%25D0%25B4%25D0%25B5%25D1%258F26%26FIELDS%5BASSIGNED_BY_ID%5D%3D1%26PARAMS%5BREGISTER_SONET_EVENT%5D%3DY%26FIELDS%5BSOURCE_ID%5D%3DWEB',
+        webhookUrl: '/api/lead',
         privacyPolicyUrl: window.siteConfig?.privacyPolicyUrl || '/privacy-policy/',
         utmCollectorUrl: window.siteConfig?.utmCollectorUrl || '',
         successMessage: 'Ваша заявка принята, ожидайте звонка в ближайшее время',

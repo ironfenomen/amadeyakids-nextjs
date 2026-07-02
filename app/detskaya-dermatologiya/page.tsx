@@ -50,7 +50,7 @@ const pageContent = `<article id="post-151" class="post-151 page type-page statu
 
 export const metadata: Metadata = {
   title: "Детская дерматология в Ставрополе | Детский медицинский центр \"Амадея Кидс\" - Частная детская клиника \"Амадея Кидс\"",
-  description: "Детская дерматология – раздел медицины, занимающаяся изучением строения и функционирования кожи и ее производных – ногтей, волос, а также слизистых – у детей",
+  description: "Детский дерматолог в Ставрополе — клиника «Амадея Кидс», ул. 45 Параллель. Лечение высыпаний, дерматитов, аллергии кожи у детей 0–18 лет. Приём по записи: +7 (988) 627-17-77.",
   robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: { canonical: "https://amadeyakids.ru/%d0%b4%d0%b5%d1%82%d1%81%d0%ba%d0%b0%d1%8f-%d0%b4%d0%b5%d1%80%d0%bc%d0%b0%d1%82%d0%be%d0%bb%d0%be%d0%b3%d0%b8%d1%8f/" },
   openGraph: {

@@ -26,7 +26,7 @@ const pageContent = `<article id="post-1048" class="post-1048 page type-page sta
 
 export const metadata: Metadata = {
   title: "Педиатр Шмарко Елизавета Викторовна - Частная детская клиника \"Амадея Кидс\"",
-  description: "Педиатр",
+  description: "Шмарко Елизавета Викторовна — педиатр в детской клинике «Амадея Кидс», Ставрополь, ул. 45 Параллель. Запись на приём: +7 (988) 627-17-77.",
   robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: { canonical: "https://amadeyakids.ru/%d0%bf%d0%b5%d0%b4%d0%b8%d0%b0%d1%82%d1%80-%d1%88%d0%bc%d0%b0%d1%80%d0%ba%d0%be/" },
   openGraph: {

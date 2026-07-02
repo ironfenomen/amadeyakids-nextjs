@@ -70,7 +70,7 @@ const pageContent = `
 
 export const metadata: Metadata = {
   title: "Педиатрия - Частная детская клиника \"Амадея Кидс\"",
-  description: "",
+  description: "Педиатр в Ставрополе — клиника «Амадея Кидс». Профилактические осмотры, вакцинация, лечение ОРВИ и хронических заболеваний у детей 0–18 лет. Запись: +7 (988) 627-17-77.",
   robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: { canonical: "https://amadeyakids.ru/pediatrics/" },
   openGraph: {

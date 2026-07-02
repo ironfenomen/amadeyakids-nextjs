@@ -26,7 +26,7 @@ const pageContent = `<article id="post-1277" class="post-1277 page type-page sta
 
 export const metadata: Metadata = {
   title: "Функциональный диагност Чимшит Анна Фаритовна - Частная детская клиника \"Амадея Кидс\"",
-  description: "Функциональный диагност",
+  description: "Чимшит Анна Фаритовна — функциональный диагност, стаж 21 год, высшая категория. Клиника «Амадея Кидс», Ставрополь. Запись на диагностику: +7 (988) 627-17-77.",
   robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: { canonical: "https://amadeyakids.ru/%d1%84%d1%83%d0%bd%d0%ba%d1%86%d0%b8%d0%be%d0%bd%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%b4%d0%b8%d0%b0%d0%b3%d0%bd%d0%be%d1%81%d1%82-%d1%87%d0%b8%d0%bc%d1%88%d0%b8%d1%82-%d0%b0%d0%bd%d0%bd%d0%b0/" },
   openGraph: {

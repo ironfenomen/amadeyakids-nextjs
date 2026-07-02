@@ -111,7 +111,7 @@ const pageContent = `
 
 export const metadata: Metadata = {
   title: "Контакты - Частная детская клиника \"Амадея Кидс\"",
-  description: "",
+  description: "Контакты детской клиники «Амадея Кидс» в Ставрополе: ул. 45 Параллель, 26. Режим работы пн–сб 7:30–19:00, вс 7:30–13:00. Телефон: +7 (988) 627-17-77.",
   robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: { canonical: "https://amadeyakids.ru/contacts/" },
   openGraph: {

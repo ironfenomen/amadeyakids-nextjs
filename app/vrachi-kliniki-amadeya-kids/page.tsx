@@ -13,7 +13,7 @@ const pageContent = `<article id="post-1475" class="post-1475 page type-page sta
 
 export const metadata: Metadata = {
   title: "Врачи клиники \"Амадея Кидс\" - Частная детская клиника \"Амадея Кидс\"",
-  description: "",
+  description: "Врачи клиники «Амадея Кидс» в Ставрополе — педиатры и узкие специалисты с большим опытом работы. Запись на приём к любому врачу: +7 (988) 627-17-77.",
   robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: { canonical: "https://amadeyakids.ru/%d0%b2%d1%80%d0%b0%d1%87%d0%b8-%d0%ba%d0%bb%d0%b8%d0%bd%d0%b8%d0%ba%d0%b8-%d0%b0%d0%bc%d0%b0%d0%b4%d0%b5%d1%8f-%d0%ba%d0%b8%d0%b4%d1%81/" },
   openGraph: {

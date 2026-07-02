@@ -86,7 +86,7 @@ const pageContent = `
 
 export const metadata: Metadata = {
   title: "Дерматолог - Частная детская клиника \"Амадея Кидс\"",
-  description: "",
+  description: "Детский дерматолог в Ставрополе — клиника «Амадея Кидс». Диагностика и лечение атопического дерматита, экземы, аллергических высыпаний. Запись: +7 (988) 627-17-77.",
   robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: { canonical: "https://amadeyakids.ru/dermatology/" },
   openGraph: {

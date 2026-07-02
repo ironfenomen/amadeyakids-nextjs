@@ -289,7 +289,7 @@ const pageContent = `
 
 export const metadata: Metadata = {
   title: "Наши специалисты - Частная детская клиника \"Амадея Кидс\"",
-  description: "",
+  description: "Врачи детской клиники «Амадея Кидс» в Ставрополе: педиатры, кардиолог, невролог, эндокринолог, дерматолог и другие специалисты. Запись: +7 (988) 627-17-77.",
   robots: "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: { canonical: "https://amadeyakids.ru/doctors/" },
   openGraph: {

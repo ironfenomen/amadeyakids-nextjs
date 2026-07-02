@@ -27,7 +27,7 @@ const pageContent = `<article id="post-1212" class="post-1212 page type-page sta
 
 export const metadata: Metadata = {
   title: "Врач УЗИ Степанян Виктория Владимировна - Частная детская клиника \"Амадея Кидс\"",
-  description: "Врач УЗИ",
+  description: "Степанян Виктория Владимировна — врач УЗИ в детской клинике «Амадея Кидс», Ставрополь. Стаж 25 лет. Запись на УЗ-диагностику: +7 (988) 627-17-77.",
   robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: { canonical: "https://amadeyakids.ru/elementor-1212/" },
   openGraph: {

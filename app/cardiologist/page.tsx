@@ -70,7 +70,7 @@ const pageContent = `
 
 export const metadata: Metadata = {
   title: "Кардиолог - Частная детская клиника \"Амадея Кидс\"",
-  description: "",
+  description: "Детский кардиолог в Ставрополе — клиника «Амадея Кидс». ЭКГ, ЭхоКГ, диагностика пороков и нарушений ритма у детей всех возрастов. Запись: +7 (988) 627-17-77.",
   robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: { canonical: "https://amadeyakids.ru/cardiologist/" },
   openGraph: {

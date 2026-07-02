@@ -102,7 +102,7 @@ const pageContent = `<article id="post-241" class="post-241 page type-page statu
 
 export const metadata: Metadata = {
   title: "Гастроэнтерология в Ставрополе | Детский медицинский центр \"Амадея Кидс\" - Частная детская клиника \"Амадея Кидс\"",
-  description: "Круглосуточный контактный центр",
+  description: "Детская гастроэнтерология в Ставрополе — клиника «Амадея Кидс», ул. 45 Параллель, 26. Лечение заболеваний ЖКТ у детей. Запись на приём: +7 (988) 627-17-77.",
   robots: "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: { canonical: "https://amadeyakids.ru/detskaya_gastroentorologiya-v-stavropole/" },
   openGraph: {

@@ -86,7 +86,7 @@ const pageContent = `
 
 export const metadata: Metadata = {
   title: "Психолог - Частная детская клиника \"Амадея Кидс\"",
-  description: "",
+  description: "Детский психолог в Ставрополе — клиника «Амадея Кидс». Помощь при тревожности, поведенческих трудностях, проблемах адаптации. Консультация для детей и родителей. Запись: +7 (988) 627-17-77.",
   robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: { canonical: "https://amadeyakids.ru/psychologist/" },
   openGraph: {

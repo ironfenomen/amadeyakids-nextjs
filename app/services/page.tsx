@@ -119,7 +119,7 @@ const pageContent = `
 
 export const metadata: Metadata = {
   title: "Услуги - Частная детская клиника \"Амадея Кидс\"",
-  description: "",
+  description: "Медицинские услуги детской клиники «Амадея Кидс» в Ставрополе: педиатрия, кардиология, эндокринология, психология, дерматология и другие специализации. Запись: +7 (988) 627-17-77.",
   robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: { canonical: "https://amadeyakids.ru/services/" },
   openGraph: {

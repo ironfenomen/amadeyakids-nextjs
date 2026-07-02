@@ -28,7 +28,7 @@ const pageContent = `<article id="post-1286" class="post-1286 page type-page sta
 
 export const metadata: Metadata = {
   title: "Гирудотерапевт Калмыкова Ирина Николаевна - Частная детская клиника \"Амадея Кидс\"",
-  description: "Терапевт гирудотерапевт",
+  description: "Калмыкова Ирина Николаевна — терапевт-гирудотерапевт в детской клинике «Амадея Кидс», Ставрополь. Стаж 9 лет. Запись на приём: +7 (988) 627-17-77.",
   robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: { canonical: "https://amadeyakids.ru/%d0%b3%d0%b8%d1%80%d1%83%d0%b4%d0%be%d1%82%d0%b5%d1%80%d0%b0%d0%bf%d0%b5%d0%b2%d1%82-%d0%ba%d0%b0%d0%bb%d0%bc%d1%8b%d0%ba%d0%be%d0%b2%d0%b0-%d0%b8%d1%80%d0%b8%d0%bd%d0%b0-%d0%bd%d0%b8%d0%ba%d0%be/" },
   openGraph: {

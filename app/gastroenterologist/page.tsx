@@ -71,7 +71,7 @@ const pageContent = `
 
 export const metadata: Metadata = {
   title: "Гастроэнтеролог - Частная детская клиника \"Амадея Кидс\"",
-  description: "",
+  description: "Детский гастроэнтеролог в Ставрополе — клиника «Амадея Кидс». Диагностика и лечение заболеваний ЖКТ, печени, поджелудочной железы у детей. Запись: +7 (988) 627-17-77.",
   robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: { canonical: "https://amadeyakids.ru/gastroenterologist/" },
   openGraph: {

@@ -71,7 +71,7 @@ const pageContent = `
 
 export const metadata: Metadata = {
   title: "Психиатр - Частная детская клиника \"Амадея Кидс\"",
-  description: "",
+  description: "Детский психиатр в Ставрополе — клиника «Амадея Кидс». Диагностика и лечение СДВГ, тревожных расстройств, расстройств аутистического спектра у детей. Запись: +7 (988) 627-17-77.",
   robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: { canonical: "https://amadeyakids.ru/psychiatrist/" },
   openGraph: {

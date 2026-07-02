@@ -26,7 +26,7 @@ const pageContent = `<article id="post-1064" class="post-1064 page type-page sta
 
 export const metadata: Metadata = {
   title: "Детский эндокринолог Григориадис Лариса Феодосиевна - Частная детская клиника \"Амадея Кидс\"",
-  description: "Детский эндокринолог",
+  description: "Григориадис Лариса Феодосиевна — детский эндокринолог в клинике «Амадея Кидс», Ставрополь. Стаж 10 лет. Диагностика и лечение эндокринных заболеваний у детей. Запись: +7 (988) 627-17-77.",
   robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: { canonical: "https://amadeyakids.ru/%d0%b4%d0%b5%d1%82%d1%81%d0%ba%d0%b8%d0%b9-%d1%8d%d0%bd%d0%b4%d0%be%d0%ba%d1%80%d0%b8%d0%bd%d0%be%d0%bb%d0%be%d0%b3-%d0%b3%d1%80%d0%b8%d0%b3%d0%be%d1%80%d0%b8%d0%b0%d0%b4%d0%b8%d1%81-%d0%bb%d0%b0/" },
   openGraph: {

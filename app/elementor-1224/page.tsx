@@ -27,7 +27,7 @@ const pageContent = `<article id="post-1224" class="post-1224 page type-page sta
 
 export const metadata: Metadata = {
   title: "Эндокринолог Лукашевич Лада Сергеевна - Частная детская клиника \"Амадея Кидс\"",
-  description: "Диетолог • нутрициолог • эндокринолог",
+  description: "Лукашевич Лада Сергеевна — диетолог, нутрициолог, эндокринолог, стаж 9 лет. Клиника «Амадея Кидс», Ставрополь. Запись: +7 (988) 627-17-77.",
   robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: { canonical: "https://amadeyakids.ru/elementor-1224/" },
   openGraph: {

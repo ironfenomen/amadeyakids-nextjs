@@ -53,7 +53,7 @@ const pageContent = `
 
 export const metadata: Metadata = {
   title: "Частная детская  клиника \"Амадея Кидс\"",
-  description: "",
+  description: "Согласие на обработку персональных данных пользователей сайта детской клиники «Амадея Кидс», Ставрополь. Соответствует требованиям ФЗ-152.",
   robots: "index, follow",
   alternates: { canonical: "https://amadeyakids.ru/personal-data-consent" },
   openGraph: {

@@ -93,7 +93,7 @@ const pageContent = `
 
 export const metadata: Metadata = {
   title: "Эндокринолог - Частная детская клиника \"Амадея Кидс\"",
-  description: "",
+  description: "Детский эндокринолог в Ставрополе — клиника «Амадея Кидс». Диагностика нарушений роста, сахарного диабета, болезней щитовидной железы. Запись: +7 (988) 627-17-77.",
   robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: { canonical: "https://amadeyakids.ru/endocrinology/" },
   openGraph: {

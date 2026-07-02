@@ -130,7 +130,7 @@ const pageContent = `
 
 export const metadata: Metadata = {
   title: "Частная детская  клиника \"Амадея Кидс\"",
-  description: "",
+  description: "Политика конфиденциальности и обработки персональных данных детской клиники «Амадея Кидс», Ставрополь. Информация о целях сбора данных и правах пользователей.",
   robots: "index, follow",
   alternates: { canonical: "https://amadeyakids.ru/privacy-policy" },
   openGraph: {

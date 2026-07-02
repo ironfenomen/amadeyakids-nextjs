@@ -26,7 +26,7 @@ const pageContent = `<article id="post-1117" class="post-1117 page type-page sta
 
 export const metadata: Metadata = {
   title: "Гинеколог Карамышева Ирина Николаевна - Частная детская клиника \"Амадея Кидс\"",
-  description: "Гинеколог врач УЗИ акушер гинеколог-эндокринолог",
+  description: "Карамышева Ирина Николаевна — гинеколог, акушер, врач УЗИ, стаж 26 лет, 1 категория. Клиника «Амадея Кидс», Ставрополь. Запись: +7 (988) 627-17-77.",
   robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: { canonical: "https://amadeyakids.ru/%d0%b3%d0%b8%d0%bd%d0%b5%d0%ba%d0%be%d0%bb%d0%be%d0%b3-%d0%ba%d0%b0%d1%80%d0%b0%d0%bc%d1%8b%d1%88%d0%b5%d0%b2%d0%b0-%d0%b8%d1%80%d0%b8%d0%bd%d0%b0-%d0%bd%d0%b8%d0%ba%d0%be%d0%bb%d0%b0%d0%b5%d0%b2/" },
   openGraph: {

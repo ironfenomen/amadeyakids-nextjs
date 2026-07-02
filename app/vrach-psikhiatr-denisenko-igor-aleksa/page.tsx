@@ -27,7 +27,7 @@ const pageContent = `<article id="post-1184" class="post-1184 page type-page sta
 
 export const metadata: Metadata = {
   title: "Врач психиатр Денисенко Игорь Александрович - Частная детская клиника \"Амадея Кидс\"",
-  description: "Психиатр • психотерапевт ",
+  description: "Денисенко Игорь Александрович — психиатр и психотерапевт, стаж 16 лет, 1 категория. Клиника «Амадея Кидс», Ставрополь. Запись: +7 (988) 627-17-77.",
   robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: { canonical: "https://amadeyakids.ru/%d0%b2%d1%80%d0%b0%d1%87-%d0%bf%d1%81%d0%b8%d1%85%d0%b8%d0%b0%d1%82%d1%80-%d0%b4%d0%b5%d0%bd%d0%b8%d1%81%d0%b5%d0%bd%d0%ba%d0%be-%d0%b8%d0%b3%d0%be%d1%80%d1%8c-%d0%b0%d0%bb%d0%b5%d0%ba%d1%81%d0%b0/" },
   openGraph: {

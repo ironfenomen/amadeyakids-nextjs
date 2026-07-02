@@ -69,7 +69,7 @@ const pageContent = `
 
 export const metadata: Metadata = {
   title: "Частная детская  клиника \"Амадея Кидс\"",
-  description: "",
+  description: "Политика использования файлов Cookie на сайте детской клиники «Амадея Кидс» (Ставрополь). Описание типов cookie, целей их использования и способов отказа.",
   robots: "index, follow",
   alternates: { canonical: "https://amadeyakids.ru/cookie-policy" },
   openGraph: {

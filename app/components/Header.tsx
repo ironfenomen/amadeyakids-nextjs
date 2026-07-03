@@ -59,23 +59,23 @@ export default function Header() {
             <li className="main-nav__item"><a className="main-nav__link" href="https://amadeyakids.ru/">Главная</a></li>
             <li className="main-nav__item main-nav__item--dropdown">
               <div className="main-nav__link">
-                <a href="https://amadeyakids.ru/services/" className="main-nav__link-text">Услуги</a>
+                <a href="https://amadeyakids.ru/uslugi-chastnoj-detskoj-kliniki-amade/" className="main-nav__link-text">Услуги</a>
                 <svg className="main-nav__arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
               <ul className="main-nav__dropdown">
                 <li><a href="https://amadeyakids.ru/pediatrics/">Педиатрия</a></li>
-                <li><a href="https://amadeyakids.ru/cardiologist/">Кардиолог</a></li>
-                <li><a href="https://amadeyakids.ru/allergist-immunologist/">Аллерголог-иммунолог</a></li>
-                <li><a href="https://amadeyakids.ru/psychiatrist/">Психиатр</a></li>
-                <li><a href="https://amadeyakids.ru/psychologist/">Психолог</a></li>
-                <li><a href="https://amadeyakids.ru/endocrinology/">Эндокринолог</a></li>
-                <li><a href="https://amadeyakids.ru/gastroenterologist/">Гастроэнтеролог</a></li>
-                <li><a href="https://amadeyakids.ru/dermatology/">Дерматолог</a></li>
+                <li><a href="https://amadeyakids.ru/detskij-kardiolog/">Кардиолог</a></li>
+                <li><a href="https://amadeyakids.ru/detskij-allergolog-immunolog-v-stavropole/">Аллерголог-иммунолог</a></li>
+                <li><a href="https://amadeyakids.ru/detskaya-psikhiatriya/">Психиатр</a></li>
+                <li><a href="https://amadeyakids.ru/detskij-psikholog/">Психолог</a></li>
+                <li><a href="https://amadeyakids.ru/detskaya-endokrinologiya/">Эндокринолог</a></li>
+                <li><a href="https://amadeyakids.ru/detskaya-gastroentorologiya-v-stavropole/">Гастроэнтеролог</a></li>
+                <li><a href="https://amadeyakids.ru/detskaya-dermatologiya/">Дерматолог</a></li>
               </ul>
             </li>
-            <li className="main-nav__item"><a className="main-nav__link" href="https://amadeyakids.ru/doctors/">Наши специалисты</a></li>
+            <li className="main-nav__item"><a className="main-nav__link" href="https://amadeyakids.ru/vrachi-kliniki-amadeya-kids/">Наши специалисты</a></li>
             <li className="main-nav__item"><a className="main-nav__link" href="https://amadeyakids.ru/contacts/">Контакты</a></li>
           </ul>
         </div>

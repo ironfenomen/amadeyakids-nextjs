@@ -10,14 +10,14 @@ const pageContent = `<article id="post-1286" class="post-1286 page type-page sta
                 <div class="entry-content">
                     <style>/*! elementor - v3.18.0 - 08-12-2023 */
 .elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>
-<p>												<img fetchpriority="high" decoding="async" width="300" height="300" src="/wp-content/uploads/2024/05/1494077-687659-kalmykova_square.jpg" alt="" srcset="/wp-content/uploads/2024/05/1494077-687659-kalmykova_square.jpg 300w, /wp-content/uploads/2024/05/1494077-687659-kalmykova_square-150x150.jpg 150w, /wp-content/uploads/2024/05/1494077-687659-kalmykova_square-96x96.jpg 96w" sizes="(max-width: 300px) 100vw, 300px" />															</p>
+<p>												<img loading="lazy" decoding="async" fetchpriority="high" decoding="async" width="300" height="300" src="/wp-content/uploads/2024/05/1494077-687659-kalmykova_square.jpg" alt="" srcset="/wp-content/uploads/2024/05/1494077-687659-kalmykova_square.jpg 300w, /wp-content/uploads/2024/05/1494077-687659-kalmykova_square-150x150.jpg 150w, /wp-content/uploads/2024/05/1494077-687659-kalmykova_square-96x96.jpg 96w" sizes="(max-width: 300px) 100vw, 300px" />															</p>
 <style>/*! elementor - v3.18.0 - 08-12-2023 */
 .elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style>
 <h2>Калмыкова Ирина Николаевна</h2>
 <p>Терапевт гирудотерапевт</p>
 <p>Стаж 9 лет</p>
 <h2>Образование</h2>
-<p>		Астраханский государственный медицинский университет2015Педиатрия <img decoding="async" src="https://prodoctorov.ru/static/_v1/pd/icons/diplom-blue.png" />Базовое образование2016ТерапияИнтернатура</p>
+<p>		Астраханский государственный медицинский университет2015Педиатрия <img loading="lazy" decoding="async" decoding="async" src="https://prodoctorov.ru/static/_v1/pd/icons/diplom-blue.png" />Базовое образование2016ТерапияИнтернатура</p>
 <h2>Повышение квалификации</h2>
 <p> 2021Некоронагенные заболевания миокарда<br />
 			<a href="https://booking.medflex.ru/?user=d08403255205cfe5edb04db2691b5e68&#038;employeeId=687659&#038;source=4" target="_blank" rel="noopener"><br />

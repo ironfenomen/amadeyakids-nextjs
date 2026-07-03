@@ -10,14 +10,14 @@ const pageContent = `<article id="post-1048" class="post-1048 page type-page sta
                 <div class="entry-content">
                     <style>/*! elementor - v3.18.0 - 08-12-2023 */
 .elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>
-<p>												<img fetchpriority="high" decoding="async" width="300" height="300" src="/wp-content/uploads/2024/01/2362172-1077574-shmarko_square.jpg" alt="" srcset="/wp-content/uploads/2024/01/2362172-1077574-shmarko_square.jpg 300w, /wp-content/uploads/2024/01/2362172-1077574-shmarko_square-150x150.jpg 150w, /wp-content/uploads/2024/01/2362172-1077574-shmarko_square-96x96.jpg 96w" sizes="(max-width: 300px) 100vw, 300px" />															</p>
+<p>												<img loading="lazy" decoding="async" fetchpriority="high" decoding="async" width="300" height="300" src="/wp-content/uploads/2024/01/2362172-1077574-shmarko_square.jpg" alt="" srcset="/wp-content/uploads/2024/01/2362172-1077574-shmarko_square.jpg 300w, /wp-content/uploads/2024/01/2362172-1077574-shmarko_square-150x150.jpg 150w, /wp-content/uploads/2024/01/2362172-1077574-shmarko_square-96x96.jpg 96w" sizes="(max-width: 300px) 100vw, 300px" />															</p>
 <style>/*! elementor - v3.18.0 - 08-12-2023 */
 .elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style>
 <h2>Шмарко Елизавета Викторовна</h2>
 <p>Педиатр</p>
 <p>Стаж 1 год</p>
 <h2>Образование</h2>
-<p>		Ставропольский государственный медицинский университет2023Педиатрия <img decoding="async" style="box-sizing: inherit; background-repeat: no-repeat; margin: 0px; padding: 0px; vertical-align: sub;" src="https://prodoctorov.ru/static/_v1/pd/icons/diplom-blue.png" />Базовое образование <br />
+<p>		Ставропольский государственный медицинский университет2023Педиатрия <img loading="lazy" decoding="async" decoding="async" style="box-sizing: inherit; background-repeat: no-repeat; margin: 0px; padding: 0px; vertical-align: sub;" src="https://prodoctorov.ru/static/_v1/pd/icons/diplom-blue.png" />Базовое образование <br />
 			<a href="#"><br />
 						Записаться<br />
 					</a></p>

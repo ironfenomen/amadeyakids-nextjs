@@ -18,10 +18,10 @@ const pageContent = `<article id="post-963" class="post-963 page type-page statu
 <p>— ребенок сокращает слова до слогов</p>
 <p>— произносит по слогам как слова, так и предложения</p>
 <p>— проблемы с концентрацией внимания, памятью</p>
-<p>													<img fetchpriority="high" decoding="async" width="800" height="534" src="/wp-content/uploads/2024/05/log1-1024x683.jpeg" alt="" srcset="/wp-content/uploads/2024/05/log1-1024x683.jpeg 1024w, /wp-content/uploads/2024/05/log1-300x200.jpeg 300w, /wp-content/uploads/2024/05/log1-768x512.jpeg 768w, /wp-content/uploads/2024/05/log1.jpeg 1200w" sizes="(max-width: 800px) 100vw, 800px" />																</p>
+<p>													<img loading="lazy" decoding="async" fetchpriority="high" decoding="async" width="800" height="534" src="/wp-content/uploads/2024/05/log1-1024x683.jpeg" alt="" srcset="/wp-content/uploads/2024/05/log1-1024x683.jpeg 1024w, /wp-content/uploads/2024/05/log1-300x200.jpeg 300w, /wp-content/uploads/2024/05/log1-768x512.jpeg 768w, /wp-content/uploads/2024/05/log1.jpeg 1200w" sizes="(max-width: 800px) 100vw, 800px" />																</p>
 <h2>ЛОГОПЕД-ДЕФЕКТОЛОГ</h2>
 <p>Логопед<br />специалист по нарушениям речи. Он работает с людьми, у которых есть проблемы с речью: от произношения отдельных звуков до полного отсутствия речи, например, по причине болезни.</p>
-<p>													<img decoding="async" width="1200" height="748" src="/wp-content/uploads/2024/05/1674631354_3-71.jpg" alt="" srcset="/wp-content/uploads/2024/05/1674631354_3-71.jpg 1200w, /wp-content/uploads/2024/05/1674631354_3-71-300x187.jpg 300w, /wp-content/uploads/2024/05/1674631354_3-71-1024x638.jpg 1024w, /wp-content/uploads/2024/05/1674631354_3-71-768x479.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px" />																</p>
+<p>													<img loading="lazy" decoding="async" decoding="async" width="1200" height="748" src="/wp-content/uploads/2024/05/1674631354_3-71.jpg" alt="" srcset="/wp-content/uploads/2024/05/1674631354_3-71.jpg 1200w, /wp-content/uploads/2024/05/1674631354_3-71-300x187.jpg 300w, /wp-content/uploads/2024/05/1674631354_3-71-1024x638.jpg 1024w, /wp-content/uploads/2024/05/1674631354_3-71-768x479.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px" />																</p>
 <h2>Когда стоит обратиться к детскому логопеду</h2>
 <p>— ребенок 7-8 месяцев не реагирует на обращенную к нему речь</p>
 <p>— ребенок сокращает слова до слогов</p>

@@ -8,7 +8,7 @@ const pageContent = `
             <div class="hero-banner__content">
                 <div class="hero-banner__content-left">
                     <div class="hero-banner__text-content">
-                        <p class="hero-banner__title">Детская клиника «Амадея Кидс»</p>
+                        <h1 class="hero-banner__title">Детская клиника «Амадея Кидс» в Ставрополе</h1>
                         <p class="hero-banner__subtitle">Профессиональная медицинская помощь детям в Ставрополе. Забота
                             о здоровье вашего ребенка — наш приоритет!</p>
                     </div>

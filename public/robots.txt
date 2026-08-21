@@ -1,25 +1,17 @@
-User-agent: Yandex
-Disallow: /cgi-bin
-Disallow: /wp-admin/
-Allow: /wp-admin/admin-ajax.php
-Disallow: /?
-Disallow: *?s=
-Disallow: *&s=
-Disallow: /search
-Disallow: /author/
-Disallow: */embed$
-Disallow: */xmlrpc.php
-Disallow: *utm*=
-Disallow: *openstat=
-Disallow: /wp-login.php
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
 Disallow: /elementor-1034/
 Disallow: /elementor-1212/
 Disallow: /elementor-1224/
 Disallow: *?elementor-preview=
-Clean-param: elementor-preview&ver
-Clean-param: s
-Sitemap: https://amadeyakids.ru/page-sitemap.xml
 
-User-agent: *
-Disallow: /wp-content/uploads/wpo/wpo-plugins-tables-list.json
-Disallow: /wp-login.php
+Clean-param: utm_source&utm_medium&utm_campaign&utm_content&utm_term&yclid&gclid&openstat&from /
+Clean-param: elementor-preview&ver /
+
+User-agent: Yandex
+Clean-param: utm_source&utm_medium&utm_campaign&utm_content&utm_term&yclid&gclid&openstat&from /
+Clean-param: elementor-preview&ver /
+
+Sitemap: https://amadeyakids.ru/sitemap.xml

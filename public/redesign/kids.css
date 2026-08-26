@@ -57,13 +57,13 @@
 }
 .page-content p {
   font-size: 16px;
-  line-height: 1.75;
-  color: var(--mutedd);
+  line-height: 1.72; /* canon a26 entry-content (было 1.75 — drift) */
+  color: rgba(233,238,246,0.82); /* canon a26 --t2 (было --mutedd #A9B7C6 — drift, темнее канона) */
   margin: 0 0 16px;
 }
 .page-content a { color: var(--g2); transition: color 0.25s var(--EO); }
 .page-content a:hover { color: var(--gold); }
-.page-content ul, .page-content ol { color: var(--mutedd); line-height: 1.75; padding-left: 22px; margin: 0 0 16px; }
+.page-content ul, .page-content ol { color: rgba(233,238,246,0.82); line-height: 1.72; padding-left: 22px; margin: 0 0 16px; } /* цвет/lh — canon a26 */
 .page-content li { margin-bottom: 6px; }
 .page-content li::marker { color: var(--gold); }
 .page-content strong, .page-content b { color: var(--parch); font-weight: 600; }
@@ -623,8 +623,7 @@ pre.wp-block-code code { font: inherit; background: none; padding: 0; border: no
 
 /* статья: длинный текст — editorial-ритм */
 .page-content .entry-content > p { max-width: 72ch; }
-.page-content .entry-content h2 { margin-top: 44px; }
-.page-content .entry-content h3 { margin-top: 34px; }
+/* h2/h3 margin-top override удалён (44px/34px — drift): канон a26 = part-14 (1.6em/1.4em) */
 .page-content .entry-content figure { margin: 26px 0; }
 .page-content .entry-content figcaption { font-size: 13px; color: var(--mutedd2); margin-top: 10px; text-align: center; }
 .wp-block-image img, .wp-block-cover img { border-radius: 14px; }

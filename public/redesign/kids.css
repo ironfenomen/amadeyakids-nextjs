@@ -156,7 +156,7 @@ select:focus-visible, textarea:focus-visible, [tabindex]:focus-visible {
 .fixed-whatsapp svg g g:first-child g:nth-child(1) path { fill: #0ccb6e; }
 .fixed-whatsapp svg g g:first-child g:nth-child(5) path { fill: #0ccb6e; }
 .footer-logo a { display: inline-block; background: none !important; }
-.footer-logo img { width: 70px; height: auto; display: block; } /* kids: mark.webp 70px + текстовый кикер (норматив J-3) */
+.footer-logo img { width: 100px; height: auto; display: block; } /* канон a26: знак 100px (logo-a26-v-200.webp 100×121) + текстовый кикер (норматив J-3) */
 
 /* ---------- cookie-баннер: плавающая карточка (геометрия эталона детокса,
    айдентика тёмная: abyss + золото) ---------- */

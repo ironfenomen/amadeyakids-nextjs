@@ -20,7 +20,7 @@ export default function Footer() {
 
             <div class="footer-items __line-blocks _column _row-w1024">
               <div class="footer-item footer-logo">
-                <a class="kids-logo kids-logo--footer" href="/" title="Детская клиника «Амадея Кидс»"><img src="/redesign/mark.webp" width="70" height="70" alt="Детская клиника «Амадея Кидс»"><span class="kids-logo-word">АМАДЕЯ<span class="kids-logo-kicker">Кидс</span></span></a>
+                <a class="kids-logo kids-logo--footer" href="/" title="Детская клиника «Амадея Кидс»"><img src="/redesign/mark.webp" width="100" height="100" alt="Детская клиника «Амадея Кидс»"><span class="kids-logo-word">АМАДЕЯ<span class="kids-logo-kicker">Кидс</span></span></a>
               </div>
 
               <div class="footer-item footer-company">

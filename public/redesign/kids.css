@@ -828,8 +828,6 @@ header .nav > div { display: none; }
 /* Core-оверлей рассчитывает на темовый сброс списков (у детокса он глобальный) */
 .menu-wrapper ul, .menu-items { list-style: none; margin: 0; padding: 0; }
 .over-content .menu-items a { text-decoration: none; }
-/* medflex-круг (z 999999995) перекрывает CTA открытого меню — гасим при оверлее */
-body.ScrollOff .medflex-round-widget__button { display: none !important; }
 @media only screen and (min-width: 768px) {
   BODY { font-size: 15px; }
   .header-item-phones { line-height: 1.2; }

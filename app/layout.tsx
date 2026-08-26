@@ -123,9 +123,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </div>
         <div className="v36-grain" aria-hidden="true" />
 
-        {/* MedFlex: round-виджет записи (KEEP AS KIDS OVERRIDE) + интеграция триггеров
-            (medflex-integration.js в THEME_JS; фикс dc6ebef) */}
-        <script defer src="https://booking.medflex.ru/components/round/round_widget_button.js" charSet="utf-8" />
+        {/* MedFlex: только функциональная интеграция триггеров (medflex-integration.js
+            в THEME_JS; фикс dc6ebef). Floating round-виджет УДАЛЁН (polish pass 3.1,
+            owner 2026-08-27): синяя плавающая кнопка «Запись» — не канон. */}
 
         {/* Плавающий WhatsApp (паттерн детокса/a26): lottie-анимация wt.json на idle,
             появление после 400px скролла — wtShow в INIT_HOME; номер kids */}

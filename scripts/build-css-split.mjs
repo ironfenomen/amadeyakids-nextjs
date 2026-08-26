@@ -59,6 +59,8 @@ const critical = [
     sliceBetween(v36, "body:has(.v36-dark) .v36-world {", "/* секции главной прозрачны", "v36 dark first"),
   banner("v36: мобильная шапка + hero mobile") +
     sliceBetween(v36, "/* ---------- мобильная шапка", "/* ============ итерация 6", "v36 mobile header"),
+  banner("kids: навигация — меню закрыто до JS (anti-FOUC, канон детокса)") +
+    "header a{text-decoration:none;color:inherit}header .nav>div{display:none}.header-menu{display:none}.over-content .header-menu{display:block}.menu-wrapper ul,.menu-items{list-style:none;margin:0;padding:0}@media only screen and (min-width:1024px){header .nav{display:block;height:auto}header .nav>div{display:block}.header-menu{display:block}.header-menu ul{display:flex;margin:0;padding:0;list-style:none}}",
   banner("kids: логотип kids (кикер)") +
     ".kids-logo{display:flex;align-items:center;gap:14px}.kids-logo-word{display:flex;flex-direction:column;line-height:1;font-family:var(--serif);font-weight:500;font-size:24px;letter-spacing:.14em;color:var(--parch)}.kids-logo-kicker{font-family:var(--sans);font-weight:600;font-size:10px;letter-spacing:.42em;text-transform:uppercase;color:var(--g2);margin-top:5px;padding-left:2px}@media only screen and (max-width:1279px){.kids-logo .kids-logo-word{font-size:19px}.kids-logo .kids-logo-kicker{font-size:8.5px}}",
 ].join("\n");

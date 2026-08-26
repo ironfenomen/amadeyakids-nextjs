@@ -71,6 +71,6 @@ export default function Footer() {
       </div>
       <button type="button" class="cookie-consent__close" data-accept-cookies aria-label="Скрыть уведомление">×</button>
     </div>
-    <div id="medflexRoundWidgetData" data-src="https://booking.medflex.ru?user=d08403255205cfe5edb04db2691b5e68&isRoundWidget=false"></div>` }} />
+` }} />
   );
 }

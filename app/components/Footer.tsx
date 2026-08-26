@@ -71,6 +71,7 @@ export default function Footer() {
 
       <div id="medflexRoundWidgetData" data-src="https://booking.medflex.ru?user=d08403255205cfe5edb04db2691b5e68&isRoundWidget=false"></div>
       <script defer src="https://booking.medflex.ru/components/round/round_widget_button.js" charSet="utf-8"></script>
+      <script defer src="/wp-content/themes/amadeya-kids-redesign/assets/js/medflex-integration.js" charSet="utf-8"></script>
     </>
   );
 }

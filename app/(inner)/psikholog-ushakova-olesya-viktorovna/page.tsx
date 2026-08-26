@@ -30,7 +30,7 @@ export default function Page() {
       {ldJson.map((j, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: j }} />
       ))}
-      <div dangerouslySetInnerHTML={{ __html: pageContent }} />
+      <div className="page-content" dangerouslySetInnerHTML={{ __html: pageContent }} />
     </>
   );
 }

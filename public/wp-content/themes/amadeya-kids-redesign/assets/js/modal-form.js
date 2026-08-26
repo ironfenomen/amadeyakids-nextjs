@@ -121,36 +121,17 @@
     }
 
     function bindEvents() {
-        // Core-shell CTA (меню v2.1, футер v36-final): атрибутный биндинг
-        document.querySelectorAll('[data-kids-modal]').forEach(function(btn){
-            btn.addEventListener('click', function(e){
+        // Делегированный биндинг CTA: world.js (меню v2.1) клонирует header-кнопки
+        // в панель меню при первом открытии — после init. Прямые addEventListener
+        // на клоны не действуют, поэтому один делегированный обработчик на document.
+        // Охват: [data-kids-modal] (Core-shell CTA: меню, футер v36-final),
+        // #cta-link, #cta-link-booking, .service-booking-button (кроме MedFlex).
+        document.addEventListener('click', function(e){
+            const t = e.target.closest('[data-kids-modal], #cta-link, #cta-link-booking, .service-booking-button:not(.booking-medflex)');
+            if (t) {
                 e.preventDefault();
                 openModal();
-            });
-        });
-
-        const ctaButton = document.getElementById('cta-link');
-        if (ctaButton) {
-            ctaButton.addEventListener('click', function(e) {
-                e.preventDefault();
-                openModal();
-            });
-        }
-
-        const ctaButtonBooking = document.getElementById('cta-link-booking');
-        if (ctaButtonBooking) {
-            ctaButtonBooking.addEventListener('click', function(e) {
-                e.preventDefault();
-                openModal();
-            });
-        }
-
-        const serviceBookingButtons = document.querySelectorAll('.service-booking-button:not(.booking-medflex)');
-        serviceBookingButtons.forEach(function(btn){
-            btn.addEventListener('click', function(e){
-                e.preventDefault();
-                openModal();
-            });
+            }
         });
 
         // Закрытие модального окна

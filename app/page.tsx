@@ -404,18 +404,18 @@ const pageContent = `<main>
 `;
 
 export const metadata: Metadata = {
-  title: 'Частная детская клиника "Амадея Кидс" в городе Ставрополе - Частная детская клиника "Амадея Кидс"',
-  description: "Детская клиника Амадея Кидс",
+  title: "Амадея Кидс — детская клиника в Ставрополе на 45 Параллель | педиатр, УЗИ, анализы",
+  description: "Детская клиника «Амадея Кидс» в Ставрополе на ул. 45 Параллель, 26. Приём педиатра и узких детских специалистов, УЗИ, анализы, вызов врача на дом. Запись по тел. +7 (988) 627-17-77.",
   robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: { canonical: "https://amadeyakids.ru/" },
   openGraph: {
     locale: "ru_RU",
     type: "website",
-    title: 'Частная детская клиника "Амадея Кидс" в городе Ставрополе - Частная детская клиника "Амадея Кидс"',
-    description: "Детская клиника Амадея Кидс Мы хотим, чтобы ваши дети росли здоровыми Предлагаем полный спектр услуг: от профилактики заболеваний до их комплексного лечения ВызватьВрача на дом ВызватьВрача на дом Записатьсяна прием вызвать врачана дом скидка 10% на анализыпри вызове врача на…",
-    url: "https://amadeyakids.ru",
-    siteName: 'Частная детская  клиника "Амадея Кидс"',
-    images: [{ url: "https://amadeyakids.ru/wp-content/themes/amadeya-kids-redesign/assets/img/logo.png", alt: "" }],
+    title: "Амадея Кидс — детская клиника в Ставрополе на 45 Параллель | педиатр, УЗИ, анализы",
+    description: "Детская клиника «Амадея Кидс» в Ставрополе на ул. 45 Параллель, 26. Приём педиатра и узких детских специалистов, УЗИ, анализы, вызов врача на дом. Запись по тел. +7 (988) 627-17-77.",
+    url: "https://amadeyakids.ru/",
+    siteName: "Частная детская  клиника \"Амадея Кидс\"",
+    images: ["https://amadeyakids.ru/wp-content/themes/amadeya-kids-redesign/assets/img/logo.png"],
   },
 };
 
@@ -431,13 +431,11 @@ export default function HomePage() {
   });
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: LD_ORG }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: LD_CLINIC }} />
       <div dangerouslySetInnerHTML={{ __html: pageContent }} />
     </>
   );
 }
 
-/* JSON-LD — frozen из prod (снят 2026-08-26, extractor). Тексты/структура не менялись. */
-const LD_ORG = `{"@context": "https://schema.org", "@graph": [{"@type": ["Organization", "Person"], "@id": "https://amadeyakids.ru/#person", "name": "Частная детская  клиника &quot;Амадея Кидс&quot;", "url": "https://amadeyakids.ru", "logo": {"@type": "ImageObject", "@id": "https://amadeyakids.ru/#logo", "url": "https://amadeyakids.ru/wp-content/uploads/2023/12/logo.svg", "contentUrl": "https://amadeyakids.ru/wp-content/uploads/2023/12/logo.svg", "caption": "Частная детская  клиника &quot;Амадея Кидс&quot;", "inLanguage": "ru-RU"}, "image": {"@id": "https://amadeyakids.ru/#logo"}}, {"@type": "WebSite", "@id": "https://amadeyakids.ru/#website", "url": "https://amadeyakids.ru", "name": "Частная детская  клиника &quot;Амадея Кидс&quot;", "publisher": {"@id": "https://amadeyakids.ru/#person"}, "inLanguage": "ru-RU", "potentialAction": {"@type": "SearchAction", "target": "https://amadeyakids.ru/?s={search_term_string}", "query-input": "required name=search_term_string"}}, {"@type": "WebPage", "@id": "https://amadeyakids.ru/#webpage", "url": "https://amadeyakids.ru/", "name": "Частная детская клиника &quot;Амадея Кидс&quot; в городе Ставрополе - Частная детская клиника &quot;Амадея Кидс&quot;", "datePublished": "2023-12-18T17:47:03+00:00", "dateModified": "2025-10-30T09:05:20+00:00", "about": {"@id": "https://amadeyakids.ru/#person"}, "isPartOf": {"@id": "https://amadeyakids.ru/#website"}, "inLanguage": "ru-RU"}]}`;
-const LD_CLINIC = `{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Частная детская  клиника &quot;Амадея Кидс&quot;", "url": "https://amadeyakids.ru/", "telephone": "+7 (988) 627-17-77", "address": {"@type": "PostalAddress", "streetAddress": "г. Ставрополь, ул. 45 параллель, 26", "addressLocality": "Ставрополь", "addressCountry": "RU"}, "openingHours": ["Пн — Сб 7:30 — 19:00, Вс 7:30 — 13:00"], "image": "https://amadeyakids.ru/wp-content/themes/amadeya-kids-redesign/assets/img/logo.png", "sameAs": []}`;
+/* JSON-LD — verbatim из prod (extractor 2026-08-26, _index.json _home). */
+const LD_CLINIC = "{\"@context\":\"https://schema.org\",\"@type\":\"MedicalClinic\",\"@id\":\"https://amadeyakids.ru/#clinic\",\"name\":\"Детская клиника Амадея Кидс\",\"url\":\"https://amadeyakids.ru/\",\"telephone\":\"+7 (988) 627-17-77\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"ул. 45 Параллель, 26\",\"addressLocality\":\"Ставрополь\",\"addressRegion\":\"Ставропольский край\",\"postalCode\":\"355000\",\"addressCountry\":\"RU\"},\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":45.0678,\"longitude\":41.9733},\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\"],\"opens\":\"07:30\",\"closes\":\"19:00\"},{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Sunday\"],\"opens\":\"07:30\",\"closes\":\"13:00\"}],\"medicalSpecialty\":[\"Pediatric\",\"GeneralPractice\"],\"areaServed\":{\"@type\":\"City\",\"name\":\"Ставрополь\"},\"image\":\"https://amadeyakids.ru/wp-content/themes/amadeya-kids-redesign/assets/img/logo.png\",\"logo\":\"https://amadeyakids.ru/wp-content/uploads/2023/12/logo.svg\",\"priceRange\":\"₽₽\",\"sameAs\":[\"https://vk.com/amadeyakids\",\"https://2gis.ru/stavropol/firm/amadeyakids\",\"https://yandex.ru/maps/org/amadeyakids\"]}";

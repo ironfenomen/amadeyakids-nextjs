@@ -121,6 +121,14 @@
     }
 
     function bindEvents() {
+        // Core-shell CTA (меню v2.1, футер v36-final): атрибутный биндинг
+        document.querySelectorAll('[data-kids-modal]').forEach(function(btn){
+            btn.addEventListener('click', function(e){
+                e.preventDefault();
+                openModal();
+            });
+        });
+
         const ctaButton = document.getElementById('cta-link');
         if (ctaButton) {
             ctaButton.addEventListener('click', function(e) {

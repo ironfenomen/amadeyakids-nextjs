@@ -1,0 +1,33 @@
+/* ==========================================================================
+   AMADEYA WEB CORE — tokens.css v1.0.0 (GENERATED 2026-08-22)
+   Источник истины: tokens/tokens.json. НЕ РЕДАКТИРОВАТЬ РУКАМИ.
+   Генерация: node tokens/build-tokens.mjs
+   ========================================================================== */
+
+/* ----- brand tokens (CANONICAL, evidence: production detox + макет v36-16) ----- */
+:root{
+  --abyss:#0E223D;
+  --depth:#132D4E;
+  --glowc:#1A3852;
+  --gold:#D6B366;
+  --g2:#F2DFA0;
+  --golddeep:#AD8247;
+  --parch:#F7F3EA;
+  --paper:#FDFCF8;
+  --inkl:#1C2634;
+  --mutedd:#A9B7C6;
+  --mutedd2:#8FA0B2;
+  --mutel:#5D6878;
+  --linel:#E4DCCB;
+  --steel:#3D5A78;
+  --serif:'Playfair Display',Georgia,serif; --sans:'Golos Text',system-ui,sans-serif;
+  --EO:cubic-bezier(.22,1,.36,1); --BREATH:cubic-bezier(.37,0,.63,1);
+}
+
+/* ----- legacy remap (--color1..4 темы → палитра бренда; значения GLOBAL) ----- */
+:root {
+  --color1:#0E223D;
+  --color2:#132D4E;
+  --color3:#AD8247;
+  --color4:#F7F3EA;
+}

@@ -1176,6 +1176,23 @@ footer { padding: 15px 0; margin-top: 30px; }
 /* Пустые артефакты Elementor */
 .entry-content p:empty, .entry-content ul:empty { display: none; }
 
+/* Галереи документов (figure.gallery-item без обёртки) — сетка на десктопе */
+@media (min-width: 768px) {
+  .entry-content figure.gallery-item {
+    display: inline-block; width: calc(50% - 16px); vertical-align: top;
+    margin: 10px 6px;
+  }
+}
+@media (min-width: 1200px) {
+  .entry-content figure.gallery-item { width: calc(33.333% - 16px); }
+}
+/* Elementor-резидуалы: стрелки карусели (aria-hidden, без width) — скрываем */
+.entry-content svg[aria-hidden="true"]:not([width]) { display: none; }
+/* Дубль-карусель документов (p с ≥10 img — повтор figure-галереи, stepurina) */
+.entry-content p:has(> img:nth-of-type(10)) { display: none; }
+/* Битый Elementor-плейсхолдер аватара (404 и на проде) */
+.entry-content img[src$="placeholder.png"] { display: none; }
+
 /* Дубль-фото в шапке врача: широкий legacy-баннер + портрет — оставляем портрет */
 .entry-content > p:first-of-type > img:not(:last-of-type) { display: none; }
 /* Тёмная декоративная svg-иконка из legacy-вёрстки — невидима на тёмном фоне */

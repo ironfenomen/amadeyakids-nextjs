@@ -1519,6 +1519,9 @@ a.page-form-phone {
   margin-top: 5px; padding-left: 2px;
 }
 .kids-logo--footer .kids-logo-word { font-size: 20px; }
+/* owner 2026-08-27: кикер «КИДС» в подвале — по центру под «АМАДЕЯ»;
+   padding-left 2px компенсирует trailing letter-spacing .42em (визуальный центр) */
+.kids-logo--footer .kids-logo-word { align-items: center; text-align: center; }
 @media only screen and (max-width: 1279px) {
   .kids-logo .kids-logo-word { font-size: 19px; }
   .kids-logo .kids-logo-kicker { font-size: 8.5px; }

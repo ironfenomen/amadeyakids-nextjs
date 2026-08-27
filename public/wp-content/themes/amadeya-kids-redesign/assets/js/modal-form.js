@@ -67,13 +67,17 @@
     function createModalHTML() {
         modalOverlay = document.createElement('div');
         modalOverlay.className = 'modal-overlay';
+        modalOverlay.setAttribute('role', 'dialog');
+        modalOverlay.setAttribute('aria-modal', 'true');
+        modalOverlay.setAttribute('aria-labelledby', 'kids-modal-title');
+        modalOverlay.setAttribute('aria-hidden', 'true');
         modalOverlay.innerHTML = `
             <div class="modal-content">
                 <button class="modal-close" type="button" aria-label="Закрыть модальное окно">&times;</button>
                 
                 <!-- Форма -->
                 <div class="modal-form-container">
-                    <h2 class="modal-title">Вызвать врача</h2>
+                    <h2 class="modal-title" id="kids-modal-title">Вызвать врача</h2>
                     <div class="modal-error" id="modal-error"></div>
                     <form class="modal-form" id="doctor-call-form">
                         <div class="form-group">
@@ -145,8 +149,28 @@
         });
 
         document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
+            if (!modalOverlay.classList.contains('active')) return;
+            if (e.key === 'Escape') {
                 closeModal();
+                return;
+            }
+            // Focus trap: Tab циклирует внутри диалога
+            if (e.key === 'Tab') {
+                const focusables = modalOverlay.querySelectorAll('button, input, a[href], [tabindex]:not([tabindex="-1"])');
+                if (!focusables.length) return;
+                const visible = Array.prototype.filter.call(focusables, function(el){
+                    return el.offsetParent !== null;
+                });
+                if (!visible.length) return;
+                const first = visible[0];
+                const last = visible[visible.length - 1];
+                if (e.shiftKey && document.activeElement === first) {
+                    e.preventDefault();
+                    last.focus();
+                } else if (!e.shiftKey && document.activeElement === last) {
+                    e.preventDefault();
+                    first.focus();
+                }
             }
         });
 
@@ -169,6 +193,7 @@
 
     function openModal() {
         modalOverlay.classList.add('active');
+        modalOverlay.setAttribute('aria-hidden', 'false');
         document.body.style.overflow = 'hidden';
         
         setTimeout(() => {
@@ -181,6 +206,7 @@
 
     function closeModal() {
         modalOverlay.classList.remove('active');
+        modalOverlay.setAttribute('aria-hidden', 'true');
         document.body.style.overflow = '';
         
         setTimeout(() => {

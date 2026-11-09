@@ -75,7 +75,12 @@
                 var dragging=false,moved=false,downX=0,ariaLast=-1;
                 /* на таче — резче следим за пальцем; вне вьюпорта — спим (Android-лаг) */
                 var coarse=window.matchMedia&&matchMedia('(pointer: coarse)').matches;
-                var ease=coarse?.22:.07;
+                if(coarse){
+                  st.removeAttribute('role');st.removeAttribute('tabindex');
+                  st.removeAttribute('aria-valuemin');st.removeAttribute('aria-valuemax');st.removeAttribute('aria-valuenow');
+                  return;
+                }
+                var ease=.07;
                 var vis=true;
                 new IntersectionObserver(function(es){es.forEach(function(e){vis=e.isIntersecting;});},{threshold:0}).observe(st);
                 function pct(ev){var r=st.getBoundingClientRect();return Math.min(1,Math.max(0,(ev.clientX-r.left)/r.width));}

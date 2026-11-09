@@ -37,6 +37,8 @@ const SKELETON = `
 HTML, BODY { max-width:100%; overflow-x:hidden; }
 img { max-width:100%; }
 [hidden] { display:none; }
+.modal-overlay { display:none; }
+.modal-overlay.active { display:flex; }
 /* swiper-скелет: hero живёт в swiper — без него слайд ломает первый экран */
 .swiper{ margin:0 auto; position:relative; overflow:hidden; list-style:none; padding:0; z-index:1 }
 .swiper-wrapper{ position:relative; width:100%; height:100%; z-index:1; display:flex; box-sizing:content-box }

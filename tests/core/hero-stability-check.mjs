@@ -43,35 +43,40 @@ try {
   if (singleLayer) {
     console.log('PASS | однослойный hero: автодвижущейся границы нет');
   } else {
-    let ready = false;
-    for (let i = 0; i < 60; i++) {
-      await sleep(100);
-      ready = await evl(`!!document.querySelector('.h36-stage .h36-warm')?.style.getPropertyValue('--x')`);
-      if (ready) break;
+    const staticSlider = await evl(`getComputedStyle(document.querySelector('.h36-stage .h36-warm')).display==='none'`);
+    if (staticSlider) {
+      console.log('PASS | на таче hero статичен, маска отключена');
+    } else {
+      let ready = false;
+      for (let i = 0; i < 60; i++) {
+        await sleep(100);
+        ready = await evl(`!!document.querySelector('.h36-stage .h36-warm')?.style.getPropertyValue('--x')`);
+        if (ready) break;
+      }
+      if (!ready) throw new Error('hero не инициализировался');
+      const coarse = await evl(`matchMedia('(pointer: coarse)').matches`);
+      const samples = [];
+      for (let i = 0; i < 14; i++) {
+        await sleep(500);
+        samples.push(await evl(`parseFloat(document.querySelector('.h36-stage .h36-warm').style.getPropertyValue('--x'))`));
+      }
+      const min = Math.min(...samples), max = Math.max(...samples);
+      const stable = max - min <= 0.02;
+      console.log(`${coarse ? 'PASS' : 'FAIL'} | touch viewport: pointer=coarse`);
+      console.log(`${stable ? 'PASS' : 'FAIL'} | без жеста граница неподвижна 7с | min=${min}% max=${max}% delta=${(max - min).toFixed(2)}%`);
+      const beforeDrag = samples[samples.length - 1];
+      await send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: 100, y: 400 }] });
+      for (let x = 110; x <= 200; x += 10) {
+        await send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x, y: 400 }] });
+        await sleep(20);
+      }
+      await send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+      await sleep(300);
+      const afterDrag = await evl(`parseFloat(document.querySelector('.h36-stage .h36-warm').style.getPropertyValue('--x'))`);
+      const dragOk = Math.abs(afterDrag - beforeDrag) > 5;
+      console.log(`${dragOk ? 'PASS' : 'FAIL'} | ручной drag меняет границу | ${beforeDrag}% → ${afterDrag}%`);
+      if (!coarse || !stable || !dragOk) process.exitCode = 1;
     }
-    if (!ready) throw new Error('hero не инициализировался');
-    const coarse = await evl(`matchMedia('(pointer: coarse)').matches`);
-    const samples = [];
-    for (let i = 0; i < 14; i++) {
-      await sleep(500);
-      samples.push(await evl(`parseFloat(document.querySelector('.h36-stage .h36-warm').style.getPropertyValue('--x'))`));
-    }
-    const min = Math.min(...samples), max = Math.max(...samples);
-    const stable = max - min <= 0.02;
-    console.log(`${coarse ? 'PASS' : 'FAIL'} | touch viewport: pointer=coarse`);
-    console.log(`${stable ? 'PASS' : 'FAIL'} | без жеста граница неподвижна 7с | min=${min}% max=${max}% delta=${(max - min).toFixed(2)}%`);
-    const beforeDrag = samples[samples.length - 1];
-    await send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: 100, y: 400 }] });
-    for (let x = 110; x <= 200; x += 10) {
-      await send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x, y: 400 }] });
-      await sleep(20);
-    }
-    await send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
-    await sleep(300);
-    const afterDrag = await evl(`parseFloat(document.querySelector('.h36-stage .h36-warm').style.getPropertyValue('--x'))`);
-    const dragOk = Math.abs(afterDrag - beforeDrag) > 5;
-    console.log(`${dragOk ? 'PASS' : 'FAIL'} | ручной drag меняет границу | ${beforeDrag}% → ${afterDrag}%`);
-    if (!coarse || !stable || !dragOk) process.exitCode = 1;
   }
 } finally {
   if (ws) ws.close();

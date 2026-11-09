@@ -92,10 +92,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             инлайн-critical из <head>, бандл догружает below-fold после load.
             ?v= бампить при каждой пересборке (npm run css:split). */}
         {/* eslint-disable-next-line @next/next/no-css-tags */}
-        <link rel="stylesheet" href="/redesign/kids-bundle.min.css?v=20260827a" media="print" data-defer-css="1" />
+        <link rel="stylesheet" href="/redesign/kids-bundle.min.css?v=20261110a" media="print" data-defer-css="1" />
         <noscript>
           {/* eslint-disable-next-line @next/next/no-css-tags */}
-          <link rel="stylesheet" href="/redesign/kids-bundle.min.css?v=20260827a" />
+          <link rel="stylesheet" href="/redesign/kids-bundle.min.css?v=20261110a" />
         </noscript>
         <noscript><div><img src="https://mc.yandex.ru/watch/101957611" style={{ position: "absolute", left: "-9999px" }} alt="" /></div></noscript>
 

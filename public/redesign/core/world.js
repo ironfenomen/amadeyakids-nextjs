@@ -122,8 +122,8 @@
                 });
                 (function loopS(){
                   if(vis&&!dragging){
-                    /* автопокачивание — только декор: выключается при reduced-motion и не мешает drag */
-                    if(!reduceMotion&&performance.now()-t0>4000)tx=.62+.16*Math.sin(performance.now()/2600);
+                    /* автопокачивание — только desktop-декор: на таче граница неподвижна без жеста */
+                    if(!reduceMotion&&!coarse&&performance.now()-t0>4000)tx=.62+.16*Math.sin(performance.now()/2600);
                     x+=(tx-x)*ease; /* короткая интерполяция при click-relocation и hover */
                     render(x);
                   }

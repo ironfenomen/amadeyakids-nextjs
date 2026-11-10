@@ -63,15 +63,19 @@ try {
     const hero = document.querySelector('.v36-hero');
     const warm = document.querySelector('.h36-warm');
     const cookie = document.querySelector('.cookie-consent,.cookies-notice-container');
+    const bundle = [...document.querySelectorAll('link[rel=stylesheet]')].find(l => /bundle\.min\.css/.test(l.href));
     return {
       warmVisible: !!(warm && warm.getClientRects().length),
+      heroLayerOk: !warm || !!(warm && warm.getClientRects().length),
       running: hero ? hero.getAnimations({subtree:true}).filter(a=>a.playState==='running').map(a=>a.animationName) : ['no-hero'],
       cookieDuration: cookie ? getComputedStyle(cookie).transitionDuration : 'missing',
-      cookieVisible: cookie ? cookie.classList.contains('cookie-consent--visible')||cookie.classList.contains('is-show') : false
+      cookieVisible: cookie ? cookie.classList.contains('cookie-consent--visible')||cookie.classList.contains('is-show') : false,
+      cssBlocking: !!bundle && (!bundle.media || bundle.media === 'all') && bundle.parentElement.tagName === 'HEAD' && !bundle.hasAttribute('data-defer-css')
     };
   })()`);
   const results = [
-    ['мобильный hero без второго слоя/маски', !state.warmVisible],
+    ['штатная структура hero: два слоя там, где есть маска', state.heroLayerOk],
+    ['полный CSS загружается в head до первой отрисовки', state.cssBlocking],
     ['мобильный hero без CSS-анимаций', state.running.length === 0],
     ['cookie без анимации переезда', state.cookieDuration.split(',').every(x => parseFloat(x) === 0)],
     ['cookie виден сразу после load, без отдельного таймера', state.cookieVisible],

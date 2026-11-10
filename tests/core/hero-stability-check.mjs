@@ -45,7 +45,8 @@ try {
   } else {
     const staticSlider = await evl(`getComputedStyle(document.querySelector('.h36-stage .h36-warm')).display==='none'`);
     if (staticSlider) {
-      console.log('PASS | на таче hero статичен, маска отключена');
+      console.log('FAIL | на таче должна быть видна маска цветной/серой hero');
+      process.exitCode = 1;
     } else {
       let ready = false;
       for (let i = 0; i < 60; i++) {

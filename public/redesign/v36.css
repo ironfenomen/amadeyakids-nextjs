@@ -793,10 +793,8 @@ select:focus-visible, label:focus-visible, [tabindex]:focus-visible {
 .h36-real .h36-cold img { filter: brightness(1.04) saturate(1.0); }
 .h36-real .h36-warm img { filter: brightness(1.14) saturate(1.14); }
 .h36-warm { will-change: clip-path; }
-/* Тач: статичный первый экран без маски, декоративного движения и приезда cookie. */
+/* Тач: маска и drag сохранены; без автопокачивания, входных анимаций и приезда cookie. */
 @media (pointer: coarse) {
-  .h36-warm, .h36-div { display: none !important; }
-  .h36-stage { cursor: default; }
   .v36-hero .v36-eb i, .v36-hero .v36-eb span, .v36-hero h1 .ln > span,
   .v36-hero .v36-lead, .v36-hero .v36-acts, .v36-cue::before { animation: none !important; }
   .cookie-consent, .cookies-notice-container { transition: none !important; }

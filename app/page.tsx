@@ -231,15 +231,15 @@ const pageContent = `<main>
                     <div class="contact-block-2-form">
                         <div class="form-title">Оставьте заявку и мы сами Вам перезвоним!</div>
                         <div class="modal-error" id="inline-modal-error"></div>
-                        <form id="inline-callback-form" novalidate>
+                        <form class="ym-hide-content" id="inline-callback-form" novalidate>
                             <div class="form-row text">
-                                <input type="text" id="inline-name" name="name" placeholder="Ваше имя" required>
+                                <input class="ym-disable-keys ym-hide-content" type="text" id="inline-name" name="name" placeholder="Ваше имя" required>
                             </div>
                             <div class="form-row text">
-                                <input type="tel" id="inline-phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                                <input class="ym-disable-keys ym-hide-content" type="tel" id="inline-phone" name="phone" placeholder="+7 (___) ___-__-__" required>
                             </div>
                             <div class="form-row checkbox">
-                                <input type="checkbox" id="inline-privacy" name="privacy_agreement" required>
+                                <input class="ym-disable-keys ym-hide-content" type="checkbox" id="inline-privacy" name="privacy_agreement" required>
                                 <label for="inline-privacy"><a href="/personal-data-consent/" target="_blank">Согласен</a> на&nbsp;обработку персональных данных в&nbsp;соответствии с&nbsp;<a href="/privacy-policy/" target="_blank">Политикой конфиденциальности</a>.</label>
                             </div>
                             <div class="form-row submit">

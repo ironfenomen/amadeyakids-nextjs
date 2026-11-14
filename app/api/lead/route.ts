@@ -45,7 +45,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ ok: false, error: result.error }, { status: 500 });
     }
 
-    return NextResponse.json({ ok: true });
+    return NextResponse.json({ ok: true, analyticsAccepted: true });
   } catch (error) {
     console.error("[lead] error:", error);
     return NextResponse.json({ ok: false, error: "SERVER_ERROR" }, { status: 500 });

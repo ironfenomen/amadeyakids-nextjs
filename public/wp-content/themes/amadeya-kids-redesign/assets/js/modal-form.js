@@ -1,5 +1,6 @@
 (function() {
     'use strict';
+    const acknowledgedResponses = new WeakSet();
 
     const config = {
         webhookUrl: '/api/lead',
@@ -74,24 +75,24 @@
         modalOverlay.innerHTML = `
             <div class="modal-content">
                 <button class="modal-close" type="button" aria-label="Закрыть модальное окно">&times;</button>
-                
+
                 <!-- Форма -->
                 <div class="modal-form-container">
                     <h2 class="modal-title" id="kids-modal-title">Вызвать врача</h2>
                     <div class="modal-error" id="modal-error"></div>
-                    <form class="modal-form" id="doctor-call-form">
+                    <form class="ym-hide-content modal-form" id="doctor-call-form">
                         <div class="form-group">
                             <label for="patient-name">Имя *</label>
-                            <input type="text" id="patient-name" name="name" required>
+                            <input class="ym-disable-keys ym-hide-content" type="text" id="patient-name" name="name" required>
                         </div>
                         <div class="form-group">
                             <label for="patient-phone">Номер телефона *</label>
-                            <input type="tel" id="patient-phone" name="phone" required>
+                            <input class="ym-disable-keys ym-hide-content" type="tel" id="patient-phone" name="phone" required>
                         </div>
                         <div class="modal-checkbox">
-                            <input type="checkbox" id="privacy-agreement" name="privacy_agreement" required>
+                            <input class="ym-disable-keys ym-hide-content" type="checkbox" id="privacy-agreement" name="privacy_agreement" required>
                             <label for="privacy-agreement">
-                                Нажимая "отправить" вы принимаете 
+                                Нажимая "отправить" вы принимаете
                                 <a href="${config.privacyPolicyUrl}" target="_blank">политику конфиденциальности</a>
                             </label>
                         </div>
@@ -195,7 +196,7 @@
         modalOverlay.classList.add('active');
         modalOverlay.setAttribute('aria-hidden', 'false');
         document.body.style.overflow = 'hidden';
-        
+
         setTimeout(() => {
             const firstInput = modalForm.querySelector('input[required]');
             if (firstInput) {
@@ -208,7 +209,7 @@
         modalOverlay.classList.remove('active');
         modalOverlay.setAttribute('aria-hidden', 'true');
         document.body.style.overflow = '';
-        
+
         setTimeout(() => {
             resetForm();
         }, 300);
@@ -224,7 +225,7 @@
 
     function handleFormSubmit(e) {
         e.preventDefault();
-        
+
         if (!validateForm()) {
             return;
         }
@@ -307,8 +308,16 @@
         }
 
         inlineRequest
-        .then(response => {
+        .then(async response => {
             if (response.ok) {
+                // Only our backend's explicit delivered acknowledgement, not HTTP status/Bitrix camouflage.
+                try {
+                    const receipt = await response.clone().json();
+                    if (receipt.analyticsAccepted === true && !acknowledgedResponses.has(response) && typeof window.ym === 'function') {
+                        acknowledgedResponses.add(response);
+                        window.ym(101957611, 'reachGoal', 'form_success');
+                    }
+                } catch (_) { /* Preserve existing form behavior. */ }
                 sendUtmBeaconIfConfigured({ form: 'inline' });
                 inlineForm.style.display = 'none';
                 if (inlineSuccess) inlineSuccess.style.display = 'block';
@@ -331,7 +340,7 @@
 
     function validateForm() {
         let isValid = true;
-        
+
         const nameInput = modalForm.querySelector('#patient-name');
         const nameRegex = /^[а-яёА-ЯЁa-zA-Z\s\-']+$/;
         if (!nameInput.value.trim()) {
@@ -478,12 +487,12 @@
 
     function showFieldError(field, message) {
         field.classList.add('error');
-        
+
         const existingError = field.parentNode.querySelector('.field-error');
         if (existingError) {
             existingError.remove();
         }
-        
+
         const errorDiv = document.createElement('div');
         errorDiv.className = 'field-error';
         errorDiv.style.color = '#ef4444';
@@ -498,7 +507,7 @@
         errorFields.forEach(field => {
             field.classList.remove('error');
         });
-        
+
         const errorMessages = modalForm.querySelectorAll('.field-error');
         errorMessages.forEach(msg => msg.remove());
     }
@@ -515,7 +524,7 @@
     function sendToWebhook(data) {
         const submitButton = modalForm.querySelector('.modal-submit');
         const originalText = submitButton.textContent;
-        
+
         submitButton.disabled = true;
         submitButton.textContent = 'Отправка...';
         hideError();
@@ -562,8 +571,16 @@
         }
 
         requestPromise
-        .then(response => {
+        .then(async response => {
             if (response.ok) {
+                // Only our backend's explicit delivered acknowledgement, not HTTP status/Bitrix camouflage.
+                try {
+                    const receipt = await response.clone().json();
+                    if (receipt.analyticsAccepted === true && !acknowledgedResponses.has(response) && typeof window.ym === 'function') {
+                        acknowledgedResponses.add(response);
+                        window.ym(101957611, 'reachGoal', 'form_success');
+                    }
+                } catch (_) { /* Preserve existing form behavior. */ }
                 sendUtmBeaconIfConfigured({ form: 'modal' });
                 showSuccess();
             } else {
@@ -584,7 +601,7 @@
     function showSuccess() {
         modalForm.style.display = 'none';
         modalSuccess.style.display = 'block';
-        
+
         // Автоматическое закрытие через 3 секунды
         setTimeout(() => {
             closeModal();

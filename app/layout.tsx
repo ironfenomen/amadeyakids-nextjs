@@ -39,7 +39,7 @@ const THEME_JS = [
   "/redesign/ov-lite.js",
   "/vendor/swiper/swiper-bundle.min.js?ver=11.2.10",
   "/wp-content/themes/amadeya-kids-redesign/assets/js/cookie-consent.js?ver=1.0.1",
-  "/wp-content/themes/amadeya-kids-redesign/assets/js/modal-form.js?ver=1.0.2",
+  "/wp-content/themes/amadeya-kids-redesign/assets/js/modal-form.js?ver=1.0.3",
   "/wp-content/themes/amadeya-kids-redesign/assets/js/medflex-integration.js?ver=1.0.1",
   "/wp-content/themes/amadeya-kids-redesign/assets/js/specialist-list.js?ver=1.0.0",
 ];
